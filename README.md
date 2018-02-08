@@ -1,1 +1,2 @@
 # molloyRPi
+once again, this is a project based off of dr. molloy's work on the raspberrypi, namely chapter 8 on i2c usage. i have added a class called the PCA9685, which is the raspberrypi's servohat. so far i tested it with one servo and it works. i have more tests to run but i have to purchase the parts. i intended this to be a codeblocks project originally, but i have migrated it to a cmake project so that the user can configure the build enviroment they see fit. my class is under the gpl3, dr. molloy's work is under his own license.
