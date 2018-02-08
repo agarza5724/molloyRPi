@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8.9)
+project (exploringPi)
+include_directories(include)
+include_directories(${ARMADILLO_INCLUDE_DIRS})
+find_package(Armadillo REQUIRED)
+file(GLOB SOURCES "source/*.cpp")
+add_executable(exploringPi ${SOURCES})
+target_link_libraries(exploringPi ${ARMADILLO_LIBRARIES} ${PROJECT_LINK_LIBS} )
