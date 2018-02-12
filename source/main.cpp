@@ -41,11 +41,13 @@ void PCA9685test1(PCA9685 &a1)
 
 void PCA9685test2(PCA9685 &a2)
 {
+    /*
     a2.SetPWMFreq(50);
 
     a2.SetPWM(4,0,150);
     usleep(1000000);
     a2.AllStop();
+    */
 
 
 }
