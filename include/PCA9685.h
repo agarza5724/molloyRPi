@@ -137,6 +137,7 @@ namespace exploringRPi
 		private:
 			arma::Mat<arma::uword> ledMatrix;
 			arma::Mat<arma::uword> allLedOnOffMatrix;
+			arma::Mat<arma::uword> bitOps;
 			unsigned int I2CBus, I2CAddress;
 			unsigned char* registers;
 
