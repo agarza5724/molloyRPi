@@ -136,8 +136,8 @@ void PCA9685::SetAllPWM(int on,int off)
 	
 	writeRegister(allLedOnOffMatrix[0], on & 0xFF);
 	writeRegister(allLedOnOffMatrix[1], on >> 8);
-	writeRegister(allLedOnOffMatrix[2], on & 0xFF);
-	writeRegister(allLedOnOffMatrix[3], on >> 8);
+	writeRegister(allLedOnOffMatrix[2], off & 0xFF);
+	writeRegister(allLedOnOffMatrix[3], off >> 8);
 		
 	
 }
