@@ -10,6 +10,6 @@ set(all_project_libs
 	${BOOST_LIBRARIES}
 	${OPENCV_LIBRARIES}
 )
-
+#screwing with git again
 add_executable(exploringPi ${SOURCES})
 target_link_libraries(exploringPi  ${all_project_libs} ${PROJECT_LINK_LIBS} )
