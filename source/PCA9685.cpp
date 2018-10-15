@@ -126,13 +126,7 @@ void PCA9685::SetPWM(int channel,int on, int off)
 
 void PCA9685::SetAllPWM(int on,int off)
 {
-	/*
-	writeRegister(ALL_LED_ON_L, on & 0xFF);
-	writeRegister(ALL_LED_ON_H, on >> 8);
-	writeRegister(ALL_LED_OFF_L, on & 0xFF);
-	writeRegister(ALL_LED_OFF_H, on >> 8);
-	*/
-	//allLedOnOffMatrix << 0xfa << 0xfb << 0xfc << 0xfd << endr;
+
 	
 	writeRegister(allLedOnOffMatrix[0], on & 0xFF);
 	writeRegister(allLedOnOffMatrix[1], on >> 8);
