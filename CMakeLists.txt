@@ -12,7 +12,7 @@ set(all_project_libs
 	${DLIB_LIBRARIES}
 	${BOOST_LIBRARIES}
 	${OPENCV_LIBRARIES}
-	${OPENCL_LIBRARIES}
+	${OpenCL_LIBRARIES}
 )
 add_executable(exploringPi ${SOURCES})
 target_link_libraries(exploringPi  ${all_project_libs} ${PROJECT_LINK_LIBS} )
