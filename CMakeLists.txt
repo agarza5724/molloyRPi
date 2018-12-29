@@ -5,6 +5,7 @@ find_package(Armadillo REQUIRED)
 find_package(Boost REQUIRED)
 find_package(dlib REQUIRED)
 find_package(OpenCL REQUIRED)
+include_directories(${OpenCL_INCLUDE_DIRS})
 include_directories(include)
 file(GLOB SOURCES "source/*.cpp")
 set(all_project_libs
